@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+.App-logo {
+  -webkit-animation: spin infinite 20s linear;
+          animation: spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #073d5f;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+h6, h5, p, h2 {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}

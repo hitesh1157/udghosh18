@@ -1,0 +1,13 @@
+html, body {
+    overflow-y: hidden
+}
+
+li > a > img:hover{
+    padding: 20px;
+    
+    transition: 300ms;
+}
+
+li > a > img {
+    transition: 300ms;
+}

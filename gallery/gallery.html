@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>GALLERY</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script >
+  var i = 0;
+  var txt = 'Feel the rush of UDGHOSH';
+  var speed = 100;
+  var j = 1;
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("self-type").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+}
+}
+</script>
+	</head>
+	<body onload="typeWriter()">
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="../index.html" class="active"><span class="fa fa-home"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main" >
+
+					<!-- Banner -->
+						<!-- <section id="banner" style="height:100vh" >
+							<div class="inner">
+								<h1 id="self-type"></h1>
+								<ul class="actions">
+									<li><a href="#galleries" class="button alt scrolly big">Begin</a></li>
+								</ul>
+							</div>
+						</section> -->
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<div id="wrapper">
+    <div id="myCarousel" data-carousel-3d style="height: 100vh" >
+        <img src="images/thumbs/01.jpg" />
+        <img src="images/thumbs/02.jpg" selected />
+        <img src="images/thumbs/03.jpg" />
+        <img src="images/thumbs/04.jpg" />
+        <img src="images/thumbs/05.jpg" />
+
+        <img src="images/thumbs/06.jpg" />
+        <img src="images/thumbs/07.jpg" />
+        <img src="images/thumbs/08.jpg" />
+        <img src="images/thumbs/09.jpg" />
+        <img src="images/thumbs/10.jpg" />
+
+        <img src="images/thumbs/11.jpg" />
+        <img src="images/thumbs/12.jpg" />
+        <img src="images/thumbs/13.jpg" />
+        <img src="images/thumbs/14.jpg" />
+        <img src="images/thumbs/15.jpg" />
+
+        <img src="images/thumbs/16.jpg" />
+        <img src="images/thumbs/17.jpg" />
+        <img src="images/thumbs/18.jpg" />
+        <img src="images/thumbs/19.jpg" />
+        <img src="images/thumbs/20.jpg" />
+
+        <img src="images/thumbs/21.jpg" />
+        <img src="images/thumbs/22.jpg" />
+        <img src="images/thumbs/23.jpg" />
+        <img src="images/thumbs/24.jpg" />
+        <img src="images/thumbs/25.jpg" />
+
+
+        <img src="images/thumbs/26.jpg" />
+        <img src="images/thumbs/27.jpg" />
+        <img src="images/thumbs/28.jpg" />
+        <img src="images/thumbs/29.jpg" />
+        <img src="images/thumbs/30.jpg" />
+
+        <img src="images/thumbs/31.jpg" />
+        <img src="images/thumbs/32.jpg" />
+        <img src="images/thumbs/33.jpg" />
+        <img src="images/thumbs/34.jpg" />
+        <img src="images/thumbs/35.jpg" />
+
+        <img src="images/thumbs/36.jpg" />
+
+    </div>
+</div>
+				</section>
+		</div>
+
+		<style type="text/css">
+  #carousel {
+    width:800px;
+    height: 300px;
+    display: relative;
+  }
+  #carousel img {
+    display: hidden; /* hide images until carousel prepares them */
+    cursor: pointer; /* not needed if you wrap carousel items in links */
+  }
+</style>
+
+		<!-- Scripts -->
+			<!-- <script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script> -->
+
+			<link rel="stylesheet" href="styles/jquery.carousel-3d.default.css" />
+
+			<script src="assets/js/jquery.js"></script>
+			<script src="assets/js/jquery.resize.js"></script>
+			<script src="assets/js/jquery.waitforimages.js"></script>
+			<script src="assets/js/modernizr.js"></script>
+			<script src="assets/js/jquery.carousel-3d.js" ></script>
+
+	</body>
+</html>

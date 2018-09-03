@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Luna';
+    src: url(./Luna.ttf);
+}
+
+@font-face {
+    font-family: 'Keep Calm';
+    src: url(./KeepCalm-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url(./Aileron-Light.otf);
+}
+
+* {
+    font-family: 'Montserrat';
+}
+
+.luna {
+    font-family: 'Luna', sans-serif;
+
+}
+
+body {
+    background-color: #fff
+}
+
+
+div.box {
+  background: #fff;
+
+  
+}
+
+div.div1 {
+  background: #fff;
+  float: left;
+  height: 100%;
+  width: auto;
+  padding-top: 20vh
+}
+
+div.div2 {
+  background: #fff;
+  height: 100%;
+
+}
+
+div.clear {
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+  font-size: 0pt;
+  margin-top: -1px;
+}
+
+
+li:not(.rules) {
+    list-style-image: url(./success.png);
+    padding: 5px;
+}
+
+div.box-small {
+  background: #fff;
+  height: 100px;
+  margin-top: 20px
+}
+
+div.div1-small {
+  background: #fff;
+  float: left;
+  height: 100%;
+  width: auto;
+}
+
+div.div2-small {
+  background: #fff;
+  height: 100%;
+}
+
+div.clear-small {
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+  font-size: 0pt;
+  margin-top: -1px;
+}
