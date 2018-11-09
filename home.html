@@ -11,41 +11,126 @@
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter UI">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter UI+Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter UI">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/fonts/iui/inter-ui.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
+
+    <style type="text/css">
+        @media(max-width: 1000px) {
+            #center-logo {
+                display: none;
+            }
+
+            ul.nav.navbar-nav.ml-auto {
+                padding: 10px;
+            }
+
+            .navbar-toggler {
+                padding: 7px;
+            }
+
+            button.btn.btn-lg {
+                float: none;
+            }
+        }
+
+        .clean-block.dark:not(.clean-info.dark) {
+            background-color: #dfe3e6;
+            margin-top: 7%;
+        }
+
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+            background: none;
+        }
+
+        @media(min-width: 576px) {
+            #register-now {
+                float: left;
+            }
+        }
+
+        @media(max-width: 568px) {
+            #mobile-view-text {
+                margin-top: 0px;
+            }
+        }
+
+        .carousel {
+            /*position: absolute;
+            top: 0;*/
+        }
+
+        a:hover {
+            align-items: none;
+        }
+
+        .clean-block.clean-hero {
+            min-height: 100vh;
+        }
+
+        .bgg {
+            transform: scale3d(1, 1, 1);
+            transition: 0.3s;
+        }
+
+        .bgg:hover{
+            transform: scale3d(1.1, 1.1, 1.1);
+            transition: 0.3s
+        }
+
+        .clean-block .block-heading {
+            /*padding-top: 13%;*/
+        }
+
+        .clean-block.clean-hero .text {
+
+        }
+
+        .modal-dialog {
+            max-width: 70%;
+        }
+
+
+    </style>
+
 </head>
 
-<body style="font-family:Roboto, sans-serif;">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="height:48px;margin:11px;padding:0px;border-radius:10px;-webkit-box-shadow:-3px 6px 43px -7px rgba(0,0,0,0.6);-moz-box-shadow:-3px 6px 43px -7px rgba(0,0,0,0.6);box-shadow:-3px 6px 43px -7px rgba(0,0,0,0.6);">
-        <div class="container"><a class="navbar-brand logo" href="#"><img src="assets/img/logo.png" width="17px" style="margin-top:-8px;margin-left:15px;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="margin-top:-5px;border:none;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+<body style="font-family:Inter UI, sans-serif;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="margin:11px;padding:0px;border-radius:10px;-webkit-box-shadow:-3px 6px 43px -7px rgba(0,0,0,0.6);-moz-box-shadow:-3px 6px 43px -7px rgba(0,0,0,0.6);box-shadow:-3px 6px 43px -7px rgba(0,0,0,0.6);">
+        <div class="container" style="padding:4px" ><!-- <a class="navbar-brand logo" href="#"><img src="assets/img/logo.png" width="17px" style="margin-top:-8px;margin-left:15px;"></a> --><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="margin-top:-5px;border:none;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
-                class="collapse navbar-collapse" id="navcol-1" style="min-width:100%;background:#fff;border-radius:5px;padding:10px;-webkit-box-shadow:2px 14px 49px -7px rgba(0,0,0,0.75);-moz-box-shadow:2px 14px 49px -7px rgba(0,0,0,0.75);box-shadow:2px 14px 49px -7px rgba(0,0,0,0.75);">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="dropdown" style="margin-right:10px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-family:Ubuntu, sans-serif;">About&nbsp;</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="https://www.youtube.com/watch?time_continue=2&amp;v=4vi2ZTXYSAo" target="_blank" style="font-family:Ubuntu, sans-serif;">Aftermovie</a><a class="dropdown-item" role="presentation"
-                                href="gallery/gallery.html" style="font-family:Ubuntu, sans-serif;">Gallery</a><a class="dropdown-item" role="presentation" href="assets/files/brochure.pdf" target="_blank" style="font-family:Ubuntu, sans-serif;">Brochure</a></div>
+                class="collapse navbar-collapse" id="navcol-1" style="border-radius:5px;">
+                <ul class="nav navbar-nav ml-auto" style="" >
+                    <li class="dropdown" style="margin-right:10px;align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-family:Inter UI, sans-serif;">About&nbsp;</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="https://www.youtube.com/watch?time_continue=2&amp;v=4vi2ZTXYSAo" target="_blank" style="font-family:Inter UI, sans-serif;">Aftermovie</a><a class="dropdown-item" role="presentation"
+                                href="gallery/gallery.html" style="font-family:Inter UI, sans-serif;">Gallery</a><a class="dropdown-item" role="presentation" href="assets/files/brochure.pdf" target="_blank" style="font-family:Inter UI, sans-serif;">Brochure</a></div>
                     </li>
-                    <li class="dropdown" style="margin-right:10px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-family:Ubuntu, sans-serif;">Events&nbsp;</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="events.html" style="font-family:Ubuntu, sans-serif;">Sports Events</a><a class="dropdown-item" role="presentation" href="pronight/pronight.html" style="font-family:Ubuntu, sans-serif;">Pronites</a>
+                    <li class="dropdown" style="margin-right:10px;align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-family:Inter UI, sans-serif;">Events&nbsp;</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="events.html" style="font-family:Inter UI, sans-serif;">Sports Events</a><a class="dropdown-item" role="presentation" href="pronight/pronight.html" style="font-family:Inter UI, sans-serif;">Pronites</a>
                             <a
-                                class="dropdown-item" role="presentation" href="#" style="font-family:Ubuntu, sans-serif;">Informals</a><a class="dropdown-item" role="presentation" href="nossq/index.html" style="font-family:Ubuntu, sans-serif;">NOSSQ</a></div>
+                                class="dropdown-item" role="presentation" href="#" style="font-family:Inter UI, sans-serif;">Informals</a><a class="dropdown-item" role="presentation" href="nossq/index.html" style="font-family:Inter UI, sans-serif;">NOSSQ</a></div>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="ca/ca.html" style="font-family:Ubuntu, sans-serif;">Campus Ambassador</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="social.html" style="font-family:Ubuntu, sans-serif;">Social CAUSE</a></li>
-                    <li class="dropdown" style="margin-right:10px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="font-family:Ubuntu, sans-serif;">SPONSORS&nbsp;</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="new-sponsors.html" style="font-family:Ubuntu, sans-serif;">Sponsors 2018</a><a class="dropdown-item" role="presentation" href="sponsors.html" style="font-family:Ubuntu, sans-serif;">Previous year Sponsors</a></div>
+                    <li class="nav-item" role="presentation" style="align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;" ><a class="nav-link" href="ca/ca.html" style="font-family:Inter UI, sans-serif;">Campus Ambassador</a></li>
+                    <li class="nav-item" role="presentation" style="align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;" ><a class="nav-link" href="social.html" style="font-family:Inter UI, sans-serif;">Social CAUSE</a></li>
+                     <li id="center-logo" class="nav-item" role="presentation" style="" ><a class="nav-link" href="home.html" style="font-family:Inter UI, sans-serif; padding: 0;cursor:pointer"><img src="assets/img/logo.png" width="37px" style="margin:0;padding-bottom:0px; cursor: pointer;padding: 6px" /></a></li>
+                    <li class="dropdown" style="margin-right:10px;align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="font-family:Inter UI, sans-serif;">SPONSORS&nbsp;</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="new-sponsors.html" style="font-family:Inter UI, sans-serif;">Sponsors 2018</a><a class="dropdown-item" role="presentation" href="sponsors.html" style="font-family:Inter UI, sans-serif;">Previous year Sponsors</a></div>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://udghosh18-beta.firebaseapp.com/login" style="font-family:Ubuntu, sans-serif;">Register</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfDo6c-yieXdyeuq53kZa7JQaBudv34NiwIA25pV3K40wfJgw/viewform" style="font-family:Ubuntu, sans-serif;">Associate with us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="team.html" style="font-family:Ubuntu, sans-serif;">Contact us</a></li>
+                    <li class="nav-item" role="presentation" style="align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;" ><a type="button" class="nav-link" data-toggle="modal" data-target="#myModal" style="font-family:Inter UI, sans-serif;">GUIDELINES</a></li>
+                    <li class="nav-item" role="presentation" style="align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;" ><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfDo6c-yieXdyeuq53kZa7JQaBudv34NiwIA25pV3K40wfJgw/viewform" style="font-family:Inter UI, sans-serif;">Associate</a></li>
+                    <li class="nav-item" role="presentation" style="align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;" ><a class="nav-link" href="team.html" style="font-family:Inter UI, sans-serif;">Contact us</a></li>
                 </ul>
         </div>
         </div>
     </nav>
-    <main class="page landing-page"><section class="clean-block clean-hero" style="background-image:url(assets/img/bg2.jpg) ;color:rgba(9,162,255,0.2);height:645px;margin-top:-7%;">
+    <!-- <main class="page landing-page" style="background: url(assets/img/bg3.jpg);height:0px">
+    </main> -->
+        <section class="clean-block clean-hero" style="/*background-image:url(assets/img/bg3.jpg);*/color:rgba(9,162,255,0.01);margin-top:-7%;overflow: hidden;" id="main-main" >
+            <!-- <img id="bgg" src="assets/img/bg3.jpg" style="z-index: 998;min-width: 100%;position: absolute;top:0;" /> -->
     <div class="icon-bar" style="z-index:999;right:0"  id="social-icons">
   <a href="https://www.facebook.com/udghosh.iitk/" class="facebook"><i class="fa fa-facebook"></i></a>
   <a href="https://twitter.com/udghoshiitk" class="twitter"><i class="fa fa-twitter"></i></a>
@@ -53,18 +138,131 @@
   <a href="https://www.linkedin.com/company/udghosh-iit-kanpur/" class="linkedin"><i class="fa fa-linkedin"></i></a>
   <a href="https://www.youtube.com/channel/UCTq85x89uVfbWfAteiYrJJw" class="youtube"><i class="fa fa-youtube"></i></a>
 </div>
-    <div class="text" style="left:0" >
+   <!--  <div class="text" style="left:0;top:27vh;z-index: 999;position: absolute;" id="mobile-view-text" >
+        <p style="text-shadow: 3px 3px 9px rgba(150, 150, 150, 1);">4 - 7 October</p>
+        <h2 style="font-size:54px;font-family: 'Inter UI', sans-serif;text-shadow: 3px 3px 9px rgba(150, 150, 150, 1); font-weight: 700" >Udghosh 2018</h2>
+        <p style="font-size: 29px;margin-top:-29px;font-family: 'Inter UI', sans-serif;text-shadow: 3px 3px 9px rgba(150, 150, 150, 1);" >India's Largest Sports Fest</p><a target="_blank" href="https://udghosh18-beta.firebaseapp.com/login" ><button class="btn  btn-lg" id="register-now" style="font-family: 'Inter UI', sans-serif;margin-top:50px;font-family: 'Inter UI', sans-serif;" type="button">Register Now</button></a></div> -->
+
+ <!-- <div class="text" style="top:27vh;padding:0;position:absolute;right:0;margin-right:10vh" id="mobile-view-text" >
         <p style="text-shadow: 3px 3px 9px rgba(150, 150, 150, 1);" >4 - 7 October</p>
-        <h2 style="font-size:54px;font-family: 'Ubuntu', sans-serif;text-shadow: 3px 3px 9px rgba(150, 150, 150, 1);" >Udghosh 2018</h2>
-        <p style="font-size: 29px;margin-top:-29px;font-family: 'Ubuntu', sans-serif;text-shadow: 3px 3px 9px rgba(150, 150, 150, 1);" >India's Largest Sports Fest</p><a target="_blank" href="https://udghosh18-beta.firebaseapp.com/login" ><button class="btn  btn-lg" style="font-family: 'Ubuntu', sans-serif;float:left;margin-top:50px;font-family: 'Ubuntu', sans-serif;" type="button">Register Now</button></a></div>
+        <h2 style="font-size:54px;font-family: 'Inter UI', sans-serif;text-shadow: 3px 3px 9px rgba(150, 150, 150, 1); font-weight: 700" >Udghosh 2018</h2>
+        <p style="font-size: 29px;margin-top:-29px;font-family: 'Inter UI', sans-serif;text-shadow: 3px 3px 9px rgba(150, 150, 150, 1);" >India's Largest Sports Fest</p><a target="_blank" href="https://udghosh18-beta.firebaseapp.com/login" ><button class="btn  btn-lg" id="register-now" style="font-family: 'Inter UI', sans-serif;margin-top:50px;font-family: 'Inter UI', sans-serif;" type="button">Register Now</button></a></div> -->
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+  <div class="carousel-inner" style="width:100vw; margin-top:90px" >
+    <div class="carousel-item active">
+      <img class="d-block w-100 bgg" src="assets/img/webcaraousel/1.jpg" alt="mallakambh show">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 bgg" src="assets/img/webcaraousel/2.jpg" alt="mira erda guest of honour">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="z-index: 999" id="car-btn">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="z-index: 999;" id="car-btn">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+    
+        <h4 style="color:#000" class="modal-title">Hospitality &amp; Security Guidelines<span style="font-size: 13px;padding-left: 10px;"  ><a style="cursor:pointer" href="https://docs.google.com/document/d/1v-y2Io2KgL46Io5XRObOSgBDa7VdNc4hChwvOdBtXns/edit?usp=sharing">Download</a></span></h4>
+      </div>
+      <div style="color:#000;text-align:left;padding: 45px" class="modal-body">
+        <p>
+            
+            <h4 style="text-align: left" >General Code of Conduct</h4>
+
+            <ol style="padding:15px;text-align: left" >
+                <li>Participants must carry their college Identity Cards and Udghosh I-card at all times during the festival and should produce the same on demand.</li>
+                <li>In case of loss of Udghosh I-card, an amount of ₹200 would have to be paid to get a duplicate I-card issued.</li>
+                <li>Consumption of liquor or any other intoxicant, Smoking, or performance enhancing drugs are strictly prohibited.</li>
+                <li>The Security cell bears no responsibility for the loss or theft of any of the belongings of the participants. Everyone is requested to take care of your own belongings during stay.</li>
+                <li>Any kind of indiscipline and harassment during any time of the meet shall lead to strict disciplinary actions against the contingent concerned.</li>
+            </ol>
+
+            <b style="font-family: 'Inter UI', sans-serif;margin-bottom: 20px" >The decision of the Security cell and the UDGHOSH’18 Team shall be final and binding to all in this regard.</b>
+
+            <h4 style="text-align: left;margin-top: 30px" >Code of Conduct at the Arenas</h4>
+ <ol style="padding:15px;text-align: left" >
+                <li>
+                    For participants:
+                        <ul style="padding-left: 45px;list-style: none" >
+                            <li>All the rules and regulations of the game should be adhered to.</li>
+                            <li>
+                                Participants should cooperate with the security teams and security guards present at the arenas to conduct the games peacefully.
+                            </li>
+                        </ul>
+                </li>
+                <li>
+                    For spectators:
+                        <ul style="padding-left: 45px; list-style: none">
+                            <li>Any negative/ obscene remarks aimed against an individual/team will not be tolerated and will result in strict action against the contingent concerned.</li>
+                        </ul>
+                </li>
+                
+            </ol>
+
+<h4 style="text-align: left" >Code of Conduct at the place of accommodation</h4>
+        <ol style="padding:15px;text-align: left" >
+                <li>Non-IITK Male participants are not allowed to enter girl’s accommodations (halls and quarters).</li>
+                <li>Non-IITK Female participants can visit the boy’s hostel from 6 am to 11 pm with confinement to central quadrangle, mess and canteen. Entry in the accommodation room is strictly prohibited.</li>
+                <li>Participants should not damage any hall property.</li>
+                <li>Participants should observe the rules and regulations of the respective places of accommodation. Cooperate with respective Hall Executive Committees and Hall residents.</li>
+                <li>Following is the arrangement of mattresses in all the places of accomodation: 
+                    <ul style="margin-left: 30px" >
+                        <li>
+                            For boys, three participants on two matresses.
+                        </li>
+                        <li>
+                            For girls, four participants on three matresses.
+                        </li>
+                    </ul>
+            <li>Participants are requested to strictly abide by aforementioned arrangement of mattresses. Any type personal arrangement for the participants will not be entertained.</li>
+            </li>
+            
+            </ol>
+
+            <h4 style="text-align: left" >Areas out of bound</h4>
+            <ol style="padding:15px;text-align: left" >
+                <li>Area behind Hall 9, Hall 10 and Hall 11.</li>
+                <li>Any construction site.</li>
+                <li>Faculty and staff residences.</li>
+                <li>Areas beyond Aerospace department including airstrip.</li>
+                <li>Academic area.</li>
+                <li>Adjoining villages.</li>
+            
+            </ol>
+
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+<script src="jssor.slider.min.js"></script>
 </section>
         <section class="clean-block clean-info dark">
             <div class="container">
                 <div class="block-heading">
-                    <p style="text-align:center;font-weight:600;color:black;font-family:Ubuntu, sans-serif;">ABOUT</p>
-                    <h2 class="text-info" style="font-family:Ubuntu, sans-serif;font-weight:bold;font-size:40px;color:rgb(14,14,14) !important;font-style:700;text-shadow:3px 3px 9px rgba(150, 150, 150, 1);">Udghosh</h2>
-                    <p class="d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center" style="margin-top:-80px;margin:0 auto;min-width:70%;color:black;font-family:'Open Sans', sans-serif;">IIT KANPUR has been one of the leading centers of education and research since its inception, providing some of the brightest minds of the country.</p>
-                    <p style="margin-top:-30px;margin:0 auto;min-width:70%;color:black;font-family:'Open Sans', sans-serif;">Udghosh has always been a classic example of the fact that it's the endeavor that counts. Our efforts have always aimed to bring about a rise in competition level among the youths. empowering the masses with a torch of social awareness,
+                    <p style="text-align:center;font-weight:600;color:black;font-family:Inter UI, sans-serif;">ABOUT</p>
+                    <h2 class="text-info" style="font-family:Inter UI, sans-serif;font-weight:bold;font-size:40px;color:rgb(14,14,14) !important;font-style:700;text-shadow:3px 3px 9px rgba(150, 150, 150, 1);">Udghosh</h2>
+                    <p class="d-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center" style="margin-top:-80px;margin:0 auto;min-width:70%;color:black;font-family:'Inter UI', sans-serif;">IIT KANPUR has been one of the leading centers of education and research since its inception, providing some of the brightest minds of the country.</p>
+                    <p style="margin-top:-30px;margin:0 auto;min-width:70%;color:black;font-family:'Inter UI', sans-serif;">Udghosh has always been a classic example of the fact that it's the endeavor that counts. Our efforts have always aimed to bring about a rise in competition level among the youths. empowering the masses with a torch of social awareness,
                         keeping&nbsp;the grandeur of entertainment and professional shows alive. Udghosh brings to the masses a plethora of events, comprising all major sports, workshops and informal events.</p>
                 </div>
             </div>
@@ -72,13 +270,13 @@
         <section class="clean-block features" style="background-color:#fcfcfc;">
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-sm-left text-info" style="font-weight:700;font-family:'Open Sans', sans-serif;font-size:40px;color:rgb(35,37,38) !important;font-style:normal;text-shadow:3px 3px 9px rgba(150, 150, 150, 1);">Events</h2>
-                    <p class="justify-content-start align-content-start align-self-start flex-nowrap mr-auto" style="margin-left:0px;color:black;font-family:'Open Sans', sans-serif;font-weight:bold;">Let's Play</p><img class="d-inline float-right" style="background-image:url(&quot;assets/img/Screen Shot 2018-08-04 at 11.07.53 PM.png&quot;);width:600px;height:510px;margin-top:-100px;">
+                    <h2 class="text-sm-left text-info" style="font-weight:700;font-family:'Inter UI', sans-serif;font-size:40px;color:rgb(35,37,38) !important;font-style:normal;text-shadow:3px 3px 9px rgba(150, 150, 150, 1);">Events</h2>
+                    <p class="justify-content-start align-content-start align-self-start flex-nowrap mr-auto" style="margin-left:0px;color:black;font-family:'Inter UI', sans-serif;font-weight:bold;">Let's Play</p><img class="d-inline float-right" style="background-image:url(&quot;assets/img/Screen Shot 2018-08-04 at 11.07.53 PM.png&quot;);width:600px;height:510px;margin-top:-100px;">
                     <p class="justify-content-start align-content-start align-self-start flex-nowrap mr-auto"
-                        style="margin-left:0px;margin-top:20px;max-width:600px;color:black;font-family:'Open Sans', sans-serif;">IIT Kanpur is equipped with the state of of the art facility in the sector of sports. Udghosh organises 22 sports events with a huge participation of both boys and girls from over 200 colleges across the country. Over 2500 students
+                        style="margin-left:0px;margin-top:20px;max-width:600px;color:black;font-family:'Inter UI', sans-serif;">IIT Kanpur is equipped with the state of of the art facility in the sector of sports. Udghosh organises 22 sports events with a huge participation of both boys and girls from over 200 colleges across the country. Over 2500 students
                         participants take part in a broad spectrum of fine sports events and informal events, followed by various other attractions like pro-Nights, comedy nights etc.</p>
                     <p class="justify-content-start align-content-start align-self-start flex-nowrap mr-auto"
-                        style="margin-left:0px;margin-top:20px;max-width:600px;color:black;font-family:'Open Sans', sans-serif;">Udghosh 2018 being the largest sports festival in the county, also promotes social causes like "Udaan, a sports extravaganza for specially abled students" and "Saathi, led by Priyanka SURESH RAINA and Udghosh" and many more.<br><a href="https://udghosh18-beta.firebaseapp.com/login" >
+                        style="margin-left:0px;margin-top:20px;max-width:600px;color:black;font-family:'Inter UI', sans-serif;">Udghosh 2018 being the largest sports festival in the county, also promotes social causes like "Udaan, a sports extravaganza for specially abled students" and "Saathi, led by Priyanka SURESH RAINA and Udghosh" and many more.<br><a href="https://udghosh18-beta.firebaseapp.com/login" >
 <button class="btn btn-primary" type="button" style="margin-left:0px;min-width:200px;margin-top:40px;background-color:#ff0000;border: #ff0000;-webkit-box-shadow: 2px 14px 61px -8px rgba(0,0,0,0.75);
 -moz-box-shadow: 2px 14px 61px -8px rgba(0,0,0,0.75);
 box-shadow: 2px 14px 61px -8px rgba(0,0,0,0.75);">Register Now</button><a/></p>
@@ -106,10 +304,53 @@ box-shadow: 2px 14px 61px -8px rgba(0,0,0,0.75);">Register Now</button><a/></p>
         <section class="clean-block slider dark">
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-info" style="font-weight:bold;font-size:40px;font-family:Ubuntu, sans-serif;margin-bottom:30px;color:rgb(44,47,50) !important;text-shadow:3px 3px 9px rgba(150, 150, 150, 1);">Witness the awesomeness of Udghosh</h2>
-                </div><div class="container" id="witness-the-awesomeness" style="padding-top:30px;font-family: 'Ubuntu', sans-serif;" >
+                    <h2 class="text-info" style="font-weight:bold;font-size:40px;font-family:Inter UI, sans-serif;margin-bottom:30px;color:rgb(44,47,50) !important;text-shadow:3px 3px 9px rgba(150, 150, 150, 1);">Witness the awesomeness of Udghosh</h2>
+                </div><div class="container" id="witness-the-awesomeness" style="padding-top:30px;font-family: 'Inter UI', sans-serif;" >
 	<div class="row">
 		<div class="timeline-centered">
+
+            <article class="timeline-entry">
+        
+        <div class="timeline-entry-inner">
+            <time class="timeline-time" datetime="2014-01-10T03:45" ><span style="font-size:18px; padding-bottom:10px !important;color:black" >July 2018</span> <span></span></time>
+            
+            <div class="timeline-icon bg-success">
+                <i class="entypo-feather"></i>
+            </div>
+            
+            <div class="timeline-label">
+                <h2><a href="#">Registration started</a> 
+                    <br/><span href="https://udghosh18-beta.firebaseapp.com/login" target="_blank" >Register Now</span></h2>
+                <p>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/udghosh18.appspot.com/o/login.png?alt=media&token=2a01a238-b0d1-4c4d-9de9-1a773f004bf9">
+                     </p>
+</iframe> 
+                </p>
+            </div>
+        </div>
+        
+    </article>
+
+             <article class="timeline-entry">
+        
+        <div class="timeline-entry-inner">
+            <time class="timeline-time" datetime="2014-01-10T03:45" ><span style="font-size:18px; padding-bottom:10px !important;color:black" >Oct 2018</span> <span></span></time>
+            
+            <div class="timeline-icon bg-success">
+                <i class="entypo-feather"></i>
+            </div>
+            
+            <div class="timeline-label" style="margin-top:-24px" >
+                <h2><a href="#">Fifteenth Edition Brochure</a> <span><a href="assets/files/brochure.pdf" >Download</a></span></h2>
+                <p>
+                     <img src="https://www.udghosh.org/images/brochure.jpg" /> 
+                </p>
+            </div>
+        </div>
+        
+    </article>
+
+            
     
 	<article class="timeline-entry">
 		
@@ -133,24 +374,7 @@ src="https://www.youtube.com/embed/4vi2ZTXYSAo">
 		
 	</article>
             
-            <article class="timeline-entry">
-		
-		<div class="timeline-entry-inner">
-			<time class="timeline-time" datetime="2014-01-10T03:45" ><span style="font-size:18px; padding-bottom:10px !important;color:black" >Oct 2018</span> <span></span></time>
-			
-			<div class="timeline-icon bg-success">
-				<i class="entypo-feather"></i>
-			</div>
-			
-			<div class="timeline-label" style="margin-top:-24px" >
-                <h2><a href="#">Fifteenth Edition Brochure</a> <span><a href="assets/files/brochure.pdf" >Download</a></span></h2>
-				<p>
-                     <img src="https://www.udghosh.org/images/brochure.jpg" /> 
-                </p>
-			</div>
-		</div>
-		
-	</article>
+           
 	
 	
 	
@@ -180,12 +404,12 @@ src="https://www.youtube.com/embed/4vi2ZTXYSAo">
                 </div>
             </div>
         </section>
-        <section class="clean-block about-us" style="padding-bottom:20px;">
+        <section class="clean-block about-us" style="padding-bottom:20px;background:#fff">
             <div class="container">
                 <div class="block-heading" style="text-align:center;">
                     <p style="text-align:center;font-weight:bold;">SPONSORS</p>
-                    <h2 class="text-info" style="font-size:40px;font-family:Ubuntu, sans-serif;font-weight:bold;color:rgb(71,73,74) !important;text-shadow:3px 3px 9px rgba(150, 150, 150, 1);">Associate with Us</h2>
-                    <p style="text-align:center;color:black;font-family:Ubuntu, sans-serif;">Udghosh 2018 will be very delighted to associate with companies to promote and making the festival happen with great success..</p>
+                    <h2 class="text-info" style="font-size:40px;font-family:Inter UI, sans-serif;font-weight:bold;color:rgb(71,73,74) !important;text-shadow:3px 3px 9px rgba(150, 150, 150, 1);">Associate with Us</h2>
+                    <p style="text-align:center;color:black;font-family:Inter UI, sans-serif;">Udghosh 2018 will be very delighted to associate with companies to promote and making the festival happen with great success..</p>
                 </div>
             </div>
         </section>
@@ -194,17 +418,17 @@ src="https://www.youtube.com/embed/4vi2ZTXYSAo">
         <div class="container">
             <div class="row justify-content-center features">
                 <div class="col-sm-6 col-lg-4 item"><img class="fa icon" src="assets/img/business-affiliate-network.png" width="40" />
-                    <h3 class="name" style="font-family:Ubuntu, sans-serif;">Marketing</h3><p class="description" style="font-family: 'Open Sans', sans-serif;" >Companies can associate with Udghosh, IIT Kanpur as sponsors for the<br />festival with a return of an incredible year-long branding and promotion<br />implementations. <br/> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDo6c-yieXdyeuq53kZa7JQaBudv34NiwIA25pV3K40wfJgw/viewform" > <button class="btn btn-primary" type="button" style="margin-left:0px;min-width:10px;margin-top:10px;background-color:#ff0000;border: #ff0000;">Join Us</button></a></p></div>
+                    <h3 class="name" style="font-family:Inter UI, sans-serif;">Marketing</h3><p class="description" style="font-family: 'Inter UI', sans-serif;" >Companies can associate with Udghosh, IIT Kanpur as sponsors for the<br />festival with a return of an incredible year-long branding and promotion<br />implementations. <br/> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDo6c-yieXdyeuq53kZa7JQaBudv34NiwIA25pV3K40wfJgw/viewform" > <button class="btn btn-primary" type="button" style="margin-left:0px;min-width:10px;margin-top:10px;background-color:#ff0000;border: #ff0000;">Join Us</button></a></p></div>
                 <div class="col-sm-6 col-lg-4 item" style="margin-left:70px;"><img class="fa icon" src="assets/img/handshake.png" width="48px" />
-                    <h3 class="name" style="font-family:Ubuntu, sans-serif;">Media</h3><p class="description" style="font-family: 'Open Sans', sans-serif;" >Media companies can associate with Udghosh, IIT Kanpur as media Partners and can expect incredible year long branding. Company participation is highly appreciated.<br /><a href="https://docs.google.com/forms/d/e/1FAIpQLSfDo6c-yieXdyeuq53kZa7JQaBudv34NiwIA25pV3K40wfJgw/viewform" ><button class="btn btn-primary" type="button" style="margin-left:0px;min-width:10px;margin-top:10px;background-color:#ff0000;border: #ff0000;">Join Us</button></a></p></div>
+                    <h3 class="name" style="font-family:Inter UI, sans-serif;">Media</h3><p class="description" style="font-family: 'Inter UI', sans-serif;" >Media companies can associate with Udghosh, IIT Kanpur as media Partners and can expect incredible year long branding. Company participation is highly appreciated.<br /><a href="https://docs.google.com/forms/d/e/1FAIpQLSfDo6c-yieXdyeuq53kZa7JQaBudv34NiwIA25pV3K40wfJgw/viewform" ><button class="btn btn-primary" type="button" style="margin-left:0px;min-width:10px;margin-top:10px;background-color:#ff0000;border: #ff0000;">Join Us</button></a></p></div>
             </div>
-        </div><h2 class="text-info" style="text-align:center;font-family: 'Ubuntu', sans-serif;color:#000 !important">Promote your brand here <br/><a href="https://docs.google.com/forms/d/e/1FAIpQLSfDo6c-yieXdyeuq53kZa7JQaBudv34NiwIA25pV3K40wfJgw/viewform" ><button class="btn btn-primary" style="margin-top:20px;background-color:#ff0000;border: #ff0000;" type="button">Register your brand</button></a></h2>
+        </div><h2 class="text-info" style="text-align:center;font-family: 'Inter UI', sans-serif;color:#000 !important">Promote your brand here <br/><a href="https://docs.google.com/forms/d/e/1FAIpQLSfDo6c-yieXdyeuq53kZa7JQaBudv34NiwIA25pV3K40wfJgw/viewform" ><button class="btn btn-primary" style="margin-top:20px;background-color:#ff0000;border: #ff0000;" type="button">Register your brand</button></a></h2>
 
 <!-- <div data-v-593e7499="" class="wrap-all"><div data-v-c06c963c="" data-v-593e7499="" class="carousel-3d-container" style="height: 402px;" controls-background-color="white"><div data-v-c06c963c="" class="carousel-3d-slider" style="width: 602px; height: 402px;"><div data-v-593e7499="" class="carousel-3d-slide custom-slide" style="border-width: 1px; width: 602px; height: 402px; transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s; background: rgba(0, 0, 0, 0) url(https://www.tutorialspoint.com/carrom/images/objective.jpg) no-repeat scroll center center / cover; transform: translateX(-800px) translateZ(-500px) rotateY(35deg); top: 0px; z-index: 997;" data-v-c06c963c=""></div><div data-v-593e7499="" class="carousel-3d-slide custom-slide" style="border-width: 1px; width: 602px; height: 402px; transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s; background: rgba(0, 0, 0, 0) url(https://www.tutorialspoint.com/carrom/images/objective.jpg) no-repeat scroll center center / cover; transform: translateX(-800px) translateZ(-500px) rotateY(35deg); top: 0px; z-index: 997; opacity: 1; visibility: visible;" data-v-c06c963c=""></div><div data-v-593e7499="" class="carousel-3d-slide custom-slide" style="border-width: 1px; width: 602px; height: 402px; transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s; background: rgba(0, 0, 0, 0) url(https://www.tutorialspoint.com/carrom/images/objective.jpg) no-repeat scroll center center / cover; transform: translateX(-400px) translateZ(-400px) rotateY(35deg); top: 0px; z-index: 998; opacity: 1; visibility: visible;" data-v-c06c963c=""></div><div data-v-593e7499="" class="carousel-3d-slide custom-slide current" style="border-width: 1px; width: 602px; height: 402px; transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s; background: rgba(0, 0, 0, 0) url(https://www.tutorialspoint.com/carrom/images/objective.jpg) no-repeat scroll center center / cover;" data-v-c06c963c=""></div><div data-v-593e7499="" class="carousel-3d-slide custom-slide" style="border-width: 1px; width: 602px; height: 402px; transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s; background: rgba(0, 0, 0, 0) url(https://www.tutorialspoint.com/carrom/images/objective.jpg) no-repeat scroll center center / cover; transform: translateX(400px) translateZ(-400px) rotateY(-35deg); top: 0px; z-index: 998; opacity: 1; visibility: visible;" data-v-c06c963c=""></div><div data-v-593e7499="" class="carousel-3d-slide custom-slide" style="border-width: 1px; width: 602px; height: 402px; transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s; background: rgba(0, 0, 0, 0) url(https://www.tutorialspoint.com/carrom/images/objective.jpg) no-repeat scroll center center / cover; transform: translateX(800px) translateZ(-500px) rotateY(-35deg); top: 0px; z-index: 997; opacity: 1; visibility: visible;" data-v-c06c963c=""></div><div data-v-593e7499="" class="carousel-3d-slide custom-slide" style="border-width: 1px; width: 602px; height: 402px; transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s; background: rgba(0, 0, 0, 0) url(https://www.tutorialspoint.com/carrom/images/objective.jpg) no-repeat scroll center center / cover; transform: translateX(800px) translateZ(-500px) rotateY(-35deg); top: 0px; z-index: 997;" data-v-c06c963c=""></div><div data-v-593e7499="" class="carousel-3d-slide custom-slide" style="border-width: 1px; width: 602px; height: 402px; transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s; background: rgba(0, 0, 0, 0) url(https://www.tutorialspoint.com/carrom/images/objective.jpg) no-repeat scroll center center / cover;" data-v-c06c963c=""></div><div data-v-593e7499="" class="carousel-3d-slide custom-slide" style="border-width: 1px; width: 602px; height: 402px; transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s; background: rgba(0, 0, 0, 0) url(https://www.tutorialspoint.com/carrom/images/objective.jpg) no-repeat scroll center center / cover;" data-v-c06c963c=""></div><div data-v-593e7499="" class="carousel-3d-slide custom-slide" style="border-width: 1px; width: 602px; height: 402px; transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s; background: rgba(0, 0, 0, 0) url(https://www.tutorialspoint.com/carrom/images/objective.jpg) no-repeat scroll center center / cover;" data-v-c06c963c=""></div></div> <div data-v-43e93932="" data-v-c06c963c="" class="carousel-3d-controls"><a data-v-43e93932="" href="#" class="prev" style="width: 50px; height: 50px; line-height: 50px;"><span data-v-43e93932="">‹</span></a> <a data-v-43e93932="" href="#" class="next" style="width: 50px; height: 50px; line-height: 50px;"><span data-v-43e93932="">›</span></a></div></div></div> --></div>
     <div class="testimonials-clean"><div class="container-fluid" style="background-image:url(assets/img/bg-t.png); position:relative">
     
     <div class="intro" style="z-index:999" >
-        <h2 class="text-center" style="color:#fff !important"><span style="color:#fff !important;z-index:999 !important;font-family: 'Ubuntu', sans-serif;font-size:40px" >What people say about Udghosh</span></h2>
+        <h2 class="text-center" style="color:#fff !important"><span style="color:#fff !important;z-index:999 !important;font-family: 'Inter UI', sans-serif;font-size:40px" >What people say about Udghosh</span></h2>
         <section style="margin-top:40px;">
             <div class="container-fluid">
                 <div class="row">
@@ -222,31 +446,31 @@ src="https://www.youtube.com/embed/4vi2ZTXYSAo">
                                     <div class="img"><img src="https://www.udghosh.org/images/avatars/user-03.jpg" /></div>
                                     <h2>Dhanraj Pillay<br /><span style="  font-weight:300;
 ">Captain, Indian Hockey Team</span></h2>
-                                    <p style="font-family: 'Open Sans', sans-serif;" >Udghosh has done a remarkable job . The infrastrucute at IIT KANPUR is one of the best in the nation.</p>
+                                    <p style="font-family: 'Inter UI', sans-serif;" >Udghosh has done a remarkable job . The infrastrucute at IIT KANPUR is one of the best in the nation.</p>
                                 </div>
                                 <div>
                                     <div class="img"><img src="https://www.udghosh.org/images/avatars/user-02.jpg" /></div>
                                     <h2>Ritwik Bhattacharya<br /><span style="  font-weight:300;
 ">5 Times National Squash Champion</span></h2>
-                                    <p style="font-family: 'Open Sans', sans-serif;">The campus provides national level sports facilities and I really enjoyed playing a exhibition match here.</p>
+                                    <p style="font-family: 'Inter UI', sans-serif;">The campus provides national level sports facilities and I really enjoyed playing a exhibition match here.</p>
                                 </div>
                                 <div>
                                     <div class="img"><img src="https://www.udghosh.org/images/avatars/user-01.jpg" /></div>
                                     <h2>Abhinav Bindra<br /><span style="  font-weight:300;
 ">Gold Medalist, Olympics</span></h2>
-                                    <p style="font-family: 'Open Sans', sans-serif;">Being the most coveted sports fest of the most prestigious universities of India , Udghosh genrates a sizeable amount of buzz.</p>
+                                    <p style="font-family: 'Inter UI', sans-serif;">Being the most coveted sports fest of the most prestigious universities of India , Udghosh genrates a sizeable amount of buzz.</p>
                                 </div>
                                 <div>
                                     <div class="img"><img src="https://www.udghosh.org/images/avatars/user-04.jpg" /></div>
                                     <h2>R.P. Singh<br /><span style="  font-weight:300;
 ">Former Fast Bowler, Indian Cricket Team</span></h2>
-                                    <p style="font-family: 'Open Sans', sans-serif;">The crowd was amazing and it was a great experience.</p>
+                                    <p style="font-family: 'Inter UI', sans-serif;">The crowd was amazing and it was a great experience.</p>
                                 </div>
                                 <div>
                                     <div class="img"><img src="https://www.udghosh.org/images/avatars/user-05.jpg" /></div>
                                     <h2>Ashwini Ponnappa<br /><span style="  font-weight:300;
 ">Gold Medalist, CommonWealth Games 2010</span></h2>
-                                    <p style="font-family: 'Open Sans', sans-serif;">The level of participation was great . It was awesome to play a match in Udghosh 13.</p>
+                                    <p style="font-family: 'Inter UI', sans-serif;">The level of participation was great . It was awesome to play a match in Udghosh 13.</p>
                                 </div>
                             </div>
                         </div>
@@ -260,16 +484,16 @@ src="https://www.youtube.com/embed/4vi2ZTXYSAo">
     <div style="padding-top:40px;">
         <div class="container">
             <div class="row">
-                <div class="col-md-3"><h1 class="black" id="days-counter" style="text-align:center;font-family: 'Open Sans', sans-serif;">0</h1>
+                <div class="col-md-3"><h1 class="black" id="days-counter" style="text-align:center;font-family: 'Inter UI', sans-serif;">0</h1>
                     <p style="text-align:center;color:black;">Days</p>
                 </div>
-                <div class="col-md-3"><h1 class="black" id="colleges-counter" style="text-align:center;font-family: 'Open Sans', sans-serif;">0</h1>
+                <div class="col-md-3"><h1 class="black" id="colleges-counter" style="text-align:center;font-family: 'Inter UI', sans-serif;">0</h1>
                     <p style="text-align:center;color:black;">Colleges</p>
                 </div>
-                <div class="col-md-3"><h1 class="black" id="footfalls-counter" style="text-align:center;font-family: 'Open Sans', sans-serif;">0</h1>
+                <div class="col-md-3"><h1 class="black" id="footfalls-counter" style="text-align:center;font-family: 'Inter UI', sans-serif;">0</h1>
                     <p style="text-align:center;color:black;">Footfalls</p>
                 </div>
-                <div class="col-md-3"><h1 class="black" id="participants-counter" style="text-align:center;font-family: 'Open Sans', sans-serif;">0</h1>
+                <div class="col-md-3"><h1 class="black" id="participants-counter" style="text-align:center;font-family: 'Inter UI', sans-serif;">0</h1>
                     <p style="text-align:center;color:black;">Participants</p>
                 </div>
             </div>
@@ -308,7 +532,14 @@ src="https://www.youtube.com/embed/4vi2ZTXYSAo">
     img:hover {
         transition: 1s;
     }
+    * {
+        font-family: 'Inter UI', sans-serif;
+    }
 </style>
+<script>
+    var options = { $AutoPlay: 1 };
+    var jssor_1_slider = new $JssorSlider$("jssor_1", options);
+</script>
 </body>
 
 </html>

@@ -6,46 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Events</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter UI:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter UI:400,600,700">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter UI">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/fonts/iui/inter-ui.css">
+    <style type="text/css">
+        @media(max-width: 1000px) {
+            #center-logo {
+                display: none;
+            }
+
+            ul.nav.navbar-nav.ml-auto {
+                padding: 10px;
+            }
+
+            .navbar-toggler {
+                padding: 7px;
+            }
+
+            button.btn.btn-lg {
+                float: none;
+            }
+        }
+
+        .clean-block.dark {
+            background-color: #dfe3e6;
+        }
+
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+            background: none;
+        }
+
+        @media(min-width: 568px) {
+            #register-now {
+                float: left;
+            }
+        }
+
+        @media(max-width: 568px) {
+            #mobile-view-text {
+                margin-top: -20vh !important;
+            }
+        }
+    </style>
+
 </head>
 
-<body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="height:48px;margin:11px;padding:0px;border-radius:10px;-webkit-box-shadow:-3px 6px 43px -7px rgba(0,0,0,0.6);-moz-box-shadow:-3px 6px 43px -7px rgba(0,0,0,0.6);box-shadow:-3px 6px 43px -7px rgba(0,0,0,0.6);">
-        <div class="container" style="padding-left: 0px;margin-left: 1%;"><a class="navbar-brand logo" href="home.html"><img src="assets/img/logo.png" width="17px" style="margin-top:-8px;margin-left:15px;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="margin-top:-5px;border:none;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+<body style="font-family:Inter UI, sans-serif;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="margin:11px;padding:0px;border-radius:10px;-webkit-box-shadow:-3px 6px 43px -7px rgba(0,0,0,0.6);-moz-box-shadow:-3px 6px 43px -7px rgba(0,0,0,0.6);box-shadow:-3px 6px 43px -7px rgba(0,0,0,0.6);">
+        <div class="container" style="padding:4px" ><!-- <a class="navbar-brand logo" href="#"><img src="assets/img/logo.png" width="17px" style="margin-top:-8px;margin-left:15px;"></a> --><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="margin-top:-5px;border:none;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
-                class="collapse navbar-collapse" id="navcol-1" style="min-width:103%;background:#fff;border-radius:5px;padding:10px;-webkit-box-shadow:2px 14px 49px -7px rgba(0,0,0,0.75);-moz-box-shadow:2px 14px 49px -7px rgba(0,0,0,0.75);box-shadow:2px 14px 49px -7px rgba(0,0,0,0.75);">
+                class="collapse navbar-collapse" id="navcol-1" style="background:#fff;border-radius:5px;">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="dropdown" style="margin-right:10px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-family:Ubuntu, sans-serif;">About&nbsp;</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="https://www.youtube.com/watch?time_continue=2&amp;v=4vi2ZTXYSAo" target="_blank" style="font-family:Ubuntu, sans-serif;">Aftermovie</a><a class="dropdown-item" role="presentation"
-                                href="gallery/gallery.html" style="font-family:Ubuntu, sans-serif;">Gallery</a><a class="dropdown-item" role="presentation" href="brochure.pdf" target="_blank" target="_blank" style="font-family:Ubuntu, sans-serif;">Brochure</a></div>
+                    <li class="dropdown" style="margin-right:10px;align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-family:Inter UI, sans-serif;">About&nbsp;</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="https://www.youtube.com/watch?time_continue=2&amp;v=4vi2ZTXYSAo" target="_blank" style="font-family:Inter UI, sans-serif;">Aftermovie</a><a class="dropdown-item" role="presentation"
+                                href="gallery/gallery.html" style="font-family:Inter UI, sans-serif;">Gallery</a><a class="dropdown-item" role="presentation" href="assets/files/brochure.pdf" target="_blank" style="font-family:Inter UI, sans-serif;">Brochure</a></div>
                     </li>
-                    <li class="dropdown" style="margin-right:10px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-family:Ubuntu, sans-serif;">Events&nbsp;</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="events.html" style="font-family:Ubuntu, sans-serif;">Sports Events</a><a class="dropdown-item" role="presentation" href="pronight/pronight.html" style="font-family:Ubuntu, sans-serif;">Pronites</a>
+                    <li class="dropdown" style="margin-right:10px;align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-family:Inter UI, sans-serif;">Events&nbsp;</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="events.html" style="font-family:Inter UI, sans-serif;">Sports Events</a><a class="dropdown-item" role="presentation" href="pronight/pronight.html" style="font-family:Inter UI, sans-serif;">Pronites</a>
                             <a
-                                class="dropdown-item" role="presentation" href="informals.html" style="font-family:Ubuntu, sans-serif;">Informals</a><a class="dropdown-item" role="presentation" href="nossq/index.html" style="font-family:Ubuntu, sans-serif;">NOSSQ</a></div>
+                                class="dropdown-item" role="presentation" href="#" style="font-family:Inter UI, sans-serif;">Informals</a><a class="dropdown-item" role="presentation" href="nossq/index.html" style="font-family:Inter UI, sans-serif;">NOSSQ</a></div>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="ca/ca.html" style="font-family:Ubuntu, sans-serif;">Campus Ambassador</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="social.html" style="font-family:Ubuntu, sans-serif;">Social CAUSE</a></li>
-                    <li class="dropdown" style="margin-right:10px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-family:Ubuntu, sans-serif;">SPONSORS&nbsp;</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="new-sponsors.html" style="font-family:Ubuntu, sans-serif;">Sponors 2018</a><a class="dropdown-item" role="presentation" href="sponsors.html" style="font-family:Ubuntu, sans-serif;">Previous year Sponsors</a></div>
+                    <li class="nav-item" role="presentation" style="align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;" ><a class="nav-link" href="ca/ca.html" style="font-family:Inter UI, sans-serif;">Campus Ambassador</a></li>
+                    <li class="nav-item" role="presentation" style="align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;" ><a class="nav-link" href="social.html" style="font-family:Inter UI, sans-serif;">Social CAUSE</a></li>
+                     <li id="center-logo" class="nav-item" role="presentation" style="" ><a class="nav-link" href="home.html" style="font-family:Inter UI, sans-serif; padding: 0;cursor:pointer"><img src="assets/img/logo.png" width="37px" style="margin:0;padding-bottom:0px; cursor: pointer;padding: 6px" /></a></li>
+                    <li class="dropdown" style="margin-right:10px;align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="font-family:Inter UI, sans-serif;">SPONSORS&nbsp;</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="new-sponsors.html" style="font-family:Inter UI, sans-serif;">Sponsors 2018</a><a class="dropdown-item" role="presentation" href="sponsors.html" style="font-family:Inter UI, sans-serif;">Previous year Sponsors</a></div>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://udghosh18-beta.firebaseapp.com/login" style="font-family:Ubuntu, sans-serif;">Register</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfDo6c-yieXdyeuq53kZa7JQaBudv34NiwIA25pV3K40wfJgw/viewform" style="font-family:Ubuntu, sans-serif;">Associate with us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="team/team.html" style="font-family:Ubuntu, sans-serif;">Contact us</a></li>
+                    <li class="nav-item" role="presentation" style="align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;" ><a class="nav-link" href="https://udghosh18-beta.firebaseapp.com/login" style="font-family:Inter UI, sans-serif;">Register</a></li>
+                    <li class="nav-item" role="presentation" style="align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;" ><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfDo6c-yieXdyeuq53kZa7JQaBudv34NiwIA25pV3K40wfJgw/viewform" style="font-family:Inter UI, sans-serif;">Associate with us</a></li>
+                    <li class="nav-item" role="presentation" style="align-items: center;align-content: center;vertical-align: middle;margin-top: 8px;" ><a class="nav-link" href="team.html" style="font-family:Inter UI, sans-serif;">Contact us</a></li>
                 </ul>
         </div>
         </div>
     </nav>
-    <div class="team-clean">
+    <div class="team-clean" style="background-color: #dfe3e6" >
         <div class="container">
             <div class="intro">
                 <h2 class="text-center"></h2>
@@ -55,91 +98,91 @@
                 <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/athletics.png">
                     <h3 class="name" style="font-family:'Open Sans', sans-serif;">Athletics</h3>
                     <p class="title">Musician</p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/athletics.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/athletics.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
                 <div
                     class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/badminton.png">
                     <h3 class="name">Badminton</h3>
                     <p class="title">Artist</p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/badminton.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/badminton.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
             <div
                 class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/basketball.png">
                 <h3 class="name">Basketball</h3>
                 <p class="title">Stylist</p>
-                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/basketball.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/basketball.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
         <div
             class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/carom.png">
             <h3 class="name">Carrom</h3>
             <p class="title">Stylist</p>
-            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/carrom.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/carrom.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
     <div
         class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/chess.png">
         <h3 class="name">Chess</h3>
         <p class="title">Stylist</p>
-        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/chess.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/chess.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
         <div
             class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/cricket.png">
             <h3 class="name">Cricket</h3>
             <p class="title">Stylist</p>
-            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social" style="margin-top:23px" ><a href="rules/cricket.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social" style="margin-top:23px" ><a href="rules/cricket.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
             <div
                 class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/football.png"><h3 class="name">Football</h3>
                 <p class="title">Stylist</p>
-                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/football.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/football.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
                 <div
                     class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/handball.png">
                     <h3 class="name">Handball</h3>
                     <p class="title">Stylist</p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/handball.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/handball.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
                     <div
                         class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/hockey.png">
                         <h3 class="name">Hockey</h3>
                         <p class="title">Stylist</p>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social" style="margin-top: 23px" ><a href="rules/hockey.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social" style="margin-top: 23px" ><a href="rules/hockey.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
                         <div
                             class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/kabaddi.png">
                             <h3 class="name">Kabaddi</h3>
                             <p class="title">Stylist</p>
-                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/kabaddi.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/kabaddi.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
                             <div
                                 class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/kho kho.png">
                                 <h3 class="name">Kho Kho</h3>
                                 <p class="title">Stylist</p>
-                                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/khokho.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                                <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/khokho.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
                                 <div
                                     class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/lawn tennis.png">
                                     <h3 class="name">Lawn Tennis</h3>
                                     <p class="title">Stylist</p>
-                                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="lawntennis.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"><a href="rules/lawntennis.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
                                     <div
                                         class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/power lifting.png">
                                         <h3 class="name">Power Lifting</h3>
                                         <p class="title">Stylist</p>
-                                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"  style="margin-top: 27px" ><a href="rules/powerlifting.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p><div class="social"  style="margin-top: 27px" ><a href="rules/powerlifting.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
                                         <div
                                             class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/sports quiz.png">
                                             <h3 class="name">Sports Quiz</h3>
                                             <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.
-                                                </p><div class="social"><a href="rules/sportsquiz.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                                                </p><div class="social"><a href="rules/sportsquiz.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
                                             <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/squash.png">
                                                 <h3 class="name">Squash</h3>
                                                 <p class="title">Stylist</p>
                                                 <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.
-                                                    </p><div class="social"><a href="rules/squash.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                                                    </p><div class="social"><a href="rules/squash.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
                                             <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/table tennis.png">
                                                 <h3 class="name">Table Tennis</h3>
                                                 <p class="title">Stylist</p>
                                                 <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.
-                                                    </p><div class="social"><a href="rules/tabletennis.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                                                    </p><div class="social"><a href="rules/tabletennis.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
                                             <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/volleyball.png">
                                                 <h3 class="name">Volleyball</h3>
                                                 <p class="title">Stylist</p>
                                                 <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.
-                                                    </p><div class="social"><a href="rules/volleyball.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                                                    </p><div class="social"><a href="rules/volleyball.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
                                             <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/weight lifting.png">
                                                 <h3 class="name">Weight Lifting</h3>
                                                 <p class="title">Stylist</p>
                                                 <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.
-                                                    </p><div class="social"><a href="rules/weightlifting.pdf" target="_blank"><i class="">View Rules</i></a><a href="#"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
+                                                    </p><div class="social"><a href="rules/weightlifting.pdf" target="_blank"><i class="">View Rules</i></a><a target="_blank" href="https://docs.google.com/spreadsheets/d/1PSTWg1T5KkaRPZ3xuhk20fiaEt1yfQFRzbTvHJySzZ8/edit#gid=0"><i class="">Schedule</i></a><a href="#"><i class="">Results</i></a></div></div>
                                             </div>
                                             </div>
                                             </div>
